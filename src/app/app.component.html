@@ -16,5 +16,20 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
+
+  <form [formGroup]="profileForm">
+    <label>
+      First Name:
+      <input type="text" formControlName="firstName">
+    </label>
+
+    <label>
+      Last Name:
+      <input type="text" formControlName="lastName">
+    </label>
+  </form>
+
+  <h1>Hola mi nombre es: {{profileForm.controls['firstName'].value}} {{profileForm.controls['firstName'].value}}</h1>
+
 </ul>
 
